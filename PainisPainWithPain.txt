@@ -2,7 +2,7 @@
 for i = 1, 55, 1 do
 	print("Raindrop Command Bar Reimagined created by QXAlmighty#2413")
 end
-	
+
 local raBdnammoCpordniaR = Instance.new("ScreenGui")
 local CommandBar = Instance.new("TextBox")
 local Title = Instance.new("TextLabel")
@@ -758,19 +758,19 @@ Input.FocusLost:Connect(function(enterPressed)
 
 
 					inform("Grab script loaded succesfully.",2)
-		    else
+				else
 					if CommandBar.Text == "FF" then
 						local ForceField = Instance.new("ForceField")
 						ForceField.Parent = script.Parent
-			else
+					else
 						if CommandBar.Text == "UnFF" then
 							local player = game.Players.LocalPlayer.Character
 							player.ForceField:Destroy()
-					end		
+						end		
+					end
+				end
+			end
 		end
-	end
-		end
-	end
 	end
 end)
 
@@ -783,7 +783,8 @@ CommandBar.Position = UDim2.new(0, 0, 0.611954451, 0)
 CommandBar.Size = UDim2.new(0, 301, 0, 71)
 CommandBar.Font = Enum.Font.SourceSans
 CommandBar.PlaceholderColor3 = Color3.fromRGB(153, 216, 255)
-CommandBar.Text = "Press ; to Execute a Command"
+CommandBar.PlaceholderText = "Press ; to Execute a Command"
+CommandBar.Text = ""
 CommandBar.TextColor3 = Color3.fromRGB(153, 216, 255)
 CommandBar.TextSize = 35.000
 CommandBar.TextStrokeColor3 = Color3.fromRGB(121, 179, 255)
